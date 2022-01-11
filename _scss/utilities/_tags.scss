@@ -1,0 +1,14 @@
+.tags {        
+    display: flex;
+    flex-wrap: wrap; 
+    list-style-type: none;
+    font-size: 12px;
+   
+
+        & li {
+            border: 1.5px solid $black;
+            border-radius: 50px;
+            padding: $small-unit;
+            margin: $small-unit;
+        }
+    }

@@ -1,0 +1,26 @@
+// ---- spacing
+$small-unit:5px;
+$unit: 10px;
+$space: $unit * 2;
+$space-max: $unit * 5;
+$space--medium: $space * 1.5;
+$padding: $unit;
+// $pagemaxwidth: 1024px;
+
+$pagemaxwidth-mobile: 375px;
+// $pagemaxwidth-desk: 1440px;
+
+
+
+
+// ----- color
+
+$black: #000000;
+$pink: #FF85C7;
+$grey: #CFCFCF;
+$light-grey: #F0F0F0;
+
+$main-color: $pink;
+$text-color: $black;
+
+

@@ -1,0 +1,32 @@
+@mixin sections ($align:flex-start) {
+    padding: $space;
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    height: 100vh;
+  }
+
+  @mixin form () {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @mixin contact ($largo:40px) {
+    height: $largo;
+    margin-bottom: $unit;
+    border: 1.5px solid $black;
+    border-radius: $space;
+    padding: 3px;
+    background-color: $light-grey;
+    
+  }
+  @mixin button-hover () {
+    color: $light-grey;
+    background-color: $black;
+   
+    border-style: none;
+    transition: 0.3s;
+    transform: translateY(-10px)
+    
+  }

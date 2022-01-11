@@ -1,0 +1,103 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: $light-grey;
+    cursor: url(../../images/cursor.svg), auto;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .body {
+    // max-width: $pagemaxwidth-mobile;
+    margin: 0 auto;
+    background-color: $light-grey;
+    height: 100vh;
+    border: 2px solid rgb(197, 197, 197);
+    overflow: hidden; //Elimina esto si queires ver la capa entera.
+  }
+  
+  .sections {
+    width: 300%; // 3 secciones, cada sección copua el 100%
+    display: flex;
+    transition: transform .5s ease-in;
+  }
+  // .scroll-section {
+  //   padding: 12px;
+  //   height: 100vh;
+  // }
+  // HOME-ABOUT
+  .scroll-section-home {
+    // background: $pink;
+    background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
+    width: 33.3333%;
+  }
+
+  // SKILLS
+  .scroll-section-skills {
+    background-color: $light-grey;
+    width: 33.3333%;
+    // background: $pink;
+    background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
+  }
+
+  // CONTACT
+  .scroll-section-contact {
+ 
+    // background: $pink;
+    background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
+    width: 33.3333%;
+  }
+  
+  // Checkboxes function
+  .nav {
+    &__input {
+      display: none;
+      &--about {
+        &:checked {
+          ~ .sections{
+            transform: translateX(0);
+            transition: all 1.5s;
+            
+           
+          }
+        }
+      }
+      &--skills {
+        &:checked {
+          ~ .sections{
+            transform: translateX(-33.3333%);
+            transition: all 1.2s;
+          }
+        }
+      }
+      &--contact {
+        &:checked {
+          ~ .sections{
+            transform: translateX(-66.6666%);
+            transition: all 1.5s;
+          }
+        }
+      }
+    }
+    &__label {
+      color: $pink;
+      
+    }
+  }
+  
+  .nav__label {
+    display: inline-flex;
+    justify-content: center;
+  }
+
+ .input__container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: $unit;
+ }
+
+
+  // nav icons- todos lightgrey pero cuando están input seleccionados son rosas

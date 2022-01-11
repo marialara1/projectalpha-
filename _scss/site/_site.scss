@@ -1,0 +1,121 @@
+body {
+  height: 100%;
+  margin: 0;
+  
+
+   header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $space;
+    padding: $space;
+
+    h1 {
+      padding: 0px;
+      margin: 0;
+    }
+
+    h2 {
+      padding: 0px;
+      margin: 0;
+    }
+  }
+
+
+.nav {
+  margin-left: 30px;
+}
+
+
+  .scroll-area {
+    height: 100vh;
+
+  }
+  .sections {
+    height: 100vh;
+    
+  
+  }
+// ------------HOME-ABOUT
+  .scroll-section-home {
+
+    @include sections (flex-start);
+
+    h3{
+      margin: 0;
+    }
+
+    .p-into {
+     
+      width: 300px;
+      height: 100px; 
+
+    }
+  }
+
+  // -----------SKILLS
+
+    .scroll-section-skills {
+      @include sections (flex-start);
+      height: 100vh;
+
+       .skills-title {
+        margin-bottom: $unit;
+      }
+
+       .tags{
+        margin-bottom: $unit;
+      }
+
+       .p-skills {
+        margin-bottom: $unit;
+      }
+        // .svg-illustration {
+        //   position: relative;
+        //   width: 100px;
+        //   bottom: $space;
+        //   top: 20%;
+        //   left: 50%;
+        //   transform: translate(-65%, -10%);
+        // }
+        .profile-pic {
+          position: relative;
+          margin-left: auto;
+          width: 150px;
+          border-radius: $space;
+        }  
+          
+    }
+
+  }
+
+  // ---------CONTACT
+
+  .scroll-section-contact {
+    @include sections (center);
+  
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+} 
+
+// ------- RRSS
+
+.rrss {
+  position: fixed;
+  bottom: $space;
+  z-index: 600;
+  left: 50%;
+  transform: translate(-65%, -10%);
+  z-index: 600;
+
+  .rrss_icon {
+    margin: 0px;
+      padding: 0px;
+      width: 30px;
+      height: 30px;
+      
+  }
+}
+
+

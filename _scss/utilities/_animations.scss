@@ -1,0 +1,7 @@
+.talk-button:hover {
+    @include button-hover ()
+}
+
+#send-button:hover {
+    @include button-hover ()
+}

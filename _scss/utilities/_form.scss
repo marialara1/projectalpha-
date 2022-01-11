@@ -1,0 +1,106 @@
+.scroll-section-contact {
+padding: 30px;
+
+}
+.svg-illustration {
+    position: absolute;
+    margin-top: 20%;
+    width: 110px;
+}
+// .form {
+//     background-color: $light-grey;
+//     width: 90%;
+//     display: flex;
+//     padding: $space;
+//     border: 1.5px solid $black;
+//     border-radius: 50px;
+
+
+//     .form-labels-inputs {
+//     font-size: 18px;
+//     display: flex;
+      
+
+//     & .labels {
+//         @include form;
+//         margin-bottom: $space;
+
+//     }
+
+//     & .inputs {
+//         @include form;
+        
+
+//         .message {
+//             height: 100px;
+//         }
+        
+//         #inputc {
+//             width: 70%;
+//             margin-bottom: $unit;
+//             border-radius: $space;
+//             padding: $unit;
+//             background-color: $light-grey;
+//             border: 1.5px solid $black;
+//             border-radius: 30px; 
+//         }
+// }
+// }
+
+// }
+
+
+
+// -----------------------------------
+
+
+.form{
+    background-color: none;
+    padding: $space-max;
+    font-size: 24px;
+    width: 100%;
+    display: flex;   
+    flex-direction: column;
+    max-width: 540px;
+    height: 400px;
+    
+}
+
+
+/* ocultos */
+.contact-labels{
+    position: absolute;
+top: -10000em;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0,0,0,0);
+border: 0;
+}
+
+/*  */
+
+
+.message{
+    @include contact ($largo:150px)
+}
+
+#subject{
+    @include contact ($largo:40px)
+}
+
+#email{
+    @include contact ($largo:40px)
+    
+}
+
+
+input[type="email"]:invalid{
+    background-color: rgb(255, 228, 233);
+}
+
+#tel{
+    @include contact ($largo:40px)
+}

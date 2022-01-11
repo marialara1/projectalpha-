@@ -1,0 +1,97 @@
+html, body {
+        font-family: Sporting Grotesque;
+        src: url(../../tipo/SportingGrotesque-Bold.otf);
+
+
+        h1 {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 24px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            padding: 0px;
+        }
+
+        .talk-button {
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+        }
+
+        .p-skills {
+            font-size: 12px;
+            width: 350px;
+        }
+    }
+
+    @media all and (min-width:800px) {
+        body {
+
+
+            // home
+            h3 {
+                font-size: 64px;
+            }
+            .p-into {
+                font-size: 24px;
+            }
+
+            .scroll-section-home {
+                .p-into {
+                  width: 690px;
+                  height: 100px; 
+                }
+              }
+
+            .talk-button {
+                font-size: 24px;
+                width: 180px;
+                margin-top: 25%;
+            }
+
+
+            // skills
+
+            .tags {        
+                font-size: 18px;
+
+                    & li {
+                        padding: $unit;
+                    }
+                }
+
+            .scroll-section-skills {
+                .p-skills {
+                    font-size: 24px;
+                    width: 824px;
+                }
+                    
+              }
+
+            // contact
+            .scroll-section-contact {
+                @include sections (flex-end);
+              
+            }
+            .contact-title {
+                font-size: 36px;
+            }
+            .form{
+                font-size: 24px;
+                width: 100%;
+                max-width: 670px;
+                height: 470px;  
+            }
+        }
+    }
