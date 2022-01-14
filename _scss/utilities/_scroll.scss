@@ -1,8 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: $light-grey;
-    cursor: url(../../images/cursor.svg), auto;
+    background-color: $light-grey
   }
   
   * {
@@ -56,11 +55,9 @@ body {
       display: none;
       &--about {
         &:checked {
-          ~ .sections{
+          ~ .sections{            
             transform: translateX(0);
-            transition: all 1.5s;
-            
-           
+            transition: all 1.5s;   
           }
         }
       }
@@ -83,21 +80,32 @@ body {
     }
     &__label {
       color: $pink;
-      
     }
   }
   
   .nav__label {
     display: inline-flex;
     justify-content: center;
+    cursor: pointer;
   }
 
  .input__container {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   justify-content: center;
+   flex-wrap: nowrap !important;
    align-items: center;
-   margin: $unit;
+   margin: 0;
  }
 
+//  .nav__label-first {
+//    margin-left: 30%;
+//  }
+
+ span {
+   margin-top: 5px;
+   margin-right: $unit;
+   padding: 0;
+ }
 
   // nav icons- todos lightgrey pero cuando están input seleccionados son rosas

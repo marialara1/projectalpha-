@@ -3,7 +3,7 @@ html, body {
         src: url(../../tipo/SportingGrotesque-Bold.otf);
 
 
-        h1 {
+        h1, h4 {
             font-size: 18px;
         }
 
@@ -12,7 +12,7 @@ html, body {
         }
 
         h3 {
-            font-size: 24px;
+            font-size: 22px;
             padding: 0px;
             margin: 0px;
         }
@@ -26,22 +26,20 @@ html, body {
             text-align: center;
             font-size: 14px;
             font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
+            font-weight: bold;
         }
 
         .p-skills {
             font-size: 12px;
-            width: 350px;
+
         }
     }
-
+// DESKTOP
     @media all and (min-width:800px) {
         body {
-
-
             // home
             h3 {
-                font-size: 64px;
+                font-size: 56px;
             }
             .p-into {
                 font-size: 24px;
@@ -55,35 +53,19 @@ html, body {
               }
 
             .talk-button {
-                font-size: 24px;
-                width: 180px;
+                font-size: 20px;
+                width: 140px;
                 margin-top: 25%;
             }
 
 
             // skills
-
-            .tags {        
-                font-size: 18px;
-
-                    & li {
-                        padding: $unit;
-                    }
-                }
-
-            .scroll-section-skills {
-                .p-skills {
-                    font-size: 24px;
-                    width: 824px;
-                }
-                    
-              }
+            .p-skills {
+                font-size: 24px;
+            }
+        
 
             // contact
-            .scroll-section-contact {
-                @include sections (flex-end);
-              
-            }
             .contact-title {
                 font-size: 36px;
             }

@@ -4,8 +4,6 @@
 
 @import "site/_site.scss";
 
-@import "site/_site-desktop.scss";
-
 @import "atmosphere/_typography.scss";
 
 @import "atmosphere/_color.scss";
@@ -16,7 +14,7 @@
 
 @import "utilities/_form.scss";
 
-@import "utilities/_buttons.scss";
+@import "atmosphere/_buttons.scss";
 
 @import "utilities/_animations.scss";
 

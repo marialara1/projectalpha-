@@ -3,11 +3,13 @@ body {
   margin: 0;
   
 
+
+// ----- HEADER
    header {
     display: flex;
     justify-content: space-between;
     margin-top: $space;
-    padding: $space;
+    padding: $unit;
 
     h1 {
       padding: 0px;
@@ -20,7 +22,7 @@ body {
     }
   }
 
-
+// ----- NAV-SCROLL
 .nav {
   margin-left: 30px;
 }
@@ -38,7 +40,7 @@ body {
 // ------------HOME-ABOUT
   .scroll-section-home {
 
-    @include sections (flex-start);
+    @include sections ($space, flex-start);
 
     h3{
       margin: 0;
@@ -53,34 +55,35 @@ body {
   }
 
   // -----------SKILLS
-
     .scroll-section-skills {
-      @include sections (flex-start);
-      height: 100vh;
+      @include sections ($space, flex-start, column );
+      flex-wrap: wrap;
+
+      .tags-title__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+  
+      .text-img__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
 
        .skills-title {
         margin-bottom: $unit;
       }
 
        .tags{
-        margin-bottom: $unit;
+        margin-bottom: $space;
       }
 
        .p-skills {
         margin-bottom: $unit;
       }
-        // .svg-illustration {
-        //   position: relative;
-        //   width: 100px;
-        //   bottom: $space;
-        //   top: 20%;
-        //   left: 50%;
-        //   transform: translate(-65%, -10%);
-        // }
         .profile-pic {
-          position: relative;
-          margin-left: auto;
-          width: 150px;
+          width: 30%;
           border-radius: $space;
         }  
           
@@ -91,31 +94,95 @@ body {
   // ---------CONTACT
 
   .scroll-section-contact {
-    @include sections (center);
+    @include sections ($space, center);
   
 }
 
 a:link, a:visited, a:active {
   text-decoration:none;
 } 
-
-// ------- RRSS
-
-.rrss {
-  position: fixed;
-  bottom: $space;
-  z-index: 600;
-  left: 50%;
-  transform: translate(-65%, -10%);
-  z-index: 600;
-
-  .rrss_icon {
-    margin: 0px;
-      padding: 0px;
-      width: 30px;
-      height: 30px;
-      
-  }
+.svg-illustration {
+  display: none;
 }
 
 
+
+// ------------|||DESKTOP|||-------------------
+
+
+@media all and (min-width:800px) {
+  body {
+
+      header {
+        padding-left: $space-max;
+        padding-right: $space-max;
+      }
+      // *****home
+      .scroll-section-home {
+
+        @include sections ($space-max, flex-start);
+      }
+      // *****skills
+
+      .scroll-section-skills {
+          @include sections ($space-max, flex-start, column );
+          // display: flex;
+          // flex-direction: column;
+          flex-wrap: wrap;
+          height: 100%;
+    
+          .tags-title__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+          }
+      
+          .text-img__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+          }
+    
+           .skills-title {
+            margin-bottom: $unit;
+            width: 50%;
+          }
+           .p-skills {
+            margin-bottom: $unit;
+            margin-top: 0;
+            width: 50%;
+          }
+            .profile-pic {
+              // position: relative;
+              height: min-content;
+              width: 15%;
+              border-radius: $space;
+            }  
+              
+        }
+
+      // *****contact
+      .scroll-section-contact {
+        padding: $padding;
+      }
+      
+      .contact-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .svg-illustration {
+          margin-right: 15%;
+          width: 15%;
+          display: inline;
+      }
+      }
+  }
+}

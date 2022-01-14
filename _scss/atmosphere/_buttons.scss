@@ -1,0 +1,31 @@
+// GENERAL
+
+.talk-button {
+    width: 100px;
+    padding: $unit;
+    background-color: none;
+    border-radius: 30px;
+    border: 2px solid $black;
+    transition: transform 750ms;
+    margin-top: 50%;
+    color: $black;
+    cursor: pointer;
+}
+
+
+#send-button {
+    width: 120px;
+    padding: $unit;
+    background-color: $light-grey;
+    border-radius: 30px;
+    border: 1.5px solid $black;
+    transition: transform 750ms;
+    margin-top: $space;
+    margin-left: auto;
+    color: $black;
+    cursor: pointer;
+
+}
+
+   
+    

@@ -1,7 +1,7 @@
-@mixin sections ($align:flex-start) {
-    padding: $space;
+@mixin sections ($padding: $space-max, $align:flex-start, $direction: column) {
+    padding: $padding;
     display: flex;
-    flex-direction: column;
+    flex-direction: $direction;
     align-items: $align;
     height: 100vh;
   }
@@ -9,7 +9,7 @@
   @mixin form () {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    // height: 100%;
   }
 
   @mixin contact ($largo:40px) {
@@ -19,6 +19,7 @@
     border-radius: $space;
     padding: 3px;
     background-color: $light-grey;
+    outline: none;
     
   }
   @mixin button-hover () {
