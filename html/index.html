@@ -10,10 +10,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../_css/style.css">
     <title>Maria Lara - about me</title>
+    <script type="text/javascript">
+        // Wait for document to load
+        document.addEventListener("DOMContentLoaded", function(event) {
+          document.documentElement.setAttribute("data-theme", "light");
+      
+          // Get our button switcher
+          var themeSwitcher = document.getElementById("theme-switcher");
+      
+          // When our button gets clicked
+          themeSwitcher.onclick = function() {
+            // Get the current selected theme, on the first run
+            // it should be `light`
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+      
+            // Switch between `dark` and `light`
+            var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+      
+            // Set our currenet theme to the new one
+            document.documentElement.setAttribute("data-theme", switchToTheme);
+          }
+        });
+      </script>
 </head>
 <body>
     <div class="body">
-
+        <button id="theme-switcher">
+            <img class="theme-img-button" src="../images/theme-svg.svg" alt="">
+            <span class="theme-text-button">switch theme</span> 
+        </button>
+       <img class="ellipse-bg" src="../images/ellipse-3-svg.svg" alt="">
+       <img class="ellipse-bg eb2" src="../images/ellipse-2-svg.svg" alt="">
+            
         <!-- FIXED ELEMENTS -->
 
             <!-- header -->
@@ -85,10 +113,7 @@
                         <h3 class="home-title"> 
                             Hi! My name is María, <br> I’m an UX/UI designer
                         </h3>
-                        <p class="p-into">Lorem ipsum dolor sit amet consectetur adipiscing 
-                            elit suspendisse curae torquent, in tortor porta mi 
-                            ante porttitor arcu condimentum magna.Lorem ipsum dolor sit amet consectetur adipiscing 
-                            elit suspendisse curae
+                        <p class="p-into">I’m an User Experience and Interface Designer with Front-End Development skills based in Spain. Focused on creating interactive digital experiences on the web. My purpose is to help you create a
                         </p>       
                         <input id="contact" type="radio" name="contact" class="nav__input nav__input--contact">
                         <label for="contact" class="nav__label">
@@ -118,11 +143,11 @@
                         <div class="text-img__container">
                             
                             <p class="p-skills">
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse curae torquent, in tortor porta mi ante porttitor arcu condimentum magna, nibh cum taciti quam cras habitant laoreet mus pretium. 
-                                <br>
-                                Sed tellus auctor vel cubilia ornare primis ad, viverra mi facilisi fermentum elementum commo torquent, nulla condimentum nisl porta blandit varius. 
-                                <br>
-                                Sed tellus auctor vel cubilia ornare primis ad, viverra mi facilisi fermentum elementum commo torquent, nulla condimentum nisl porta blandit varius.
+                                I studied Fine Arts in Valencia, which made me learn a lot about different artistic fields and gave me a global vision about every project I made, such as design projects. After finishing Fine Arts I decided to keep learning about digital design so I studied Web Development and Design at ESAT where I learned about marketing, interface design with <strong>Figma</strong>  and <strong>HTML</strong>, <strong>CSS</strong>  & <strong>JS</strong>.
+                                <br><br>
+                                That makes me different, I can make a whole web for you, from the design to the code, always focused on giving the user the best experience.
+                                <br><br>
+                                Besides web design, one of my passions is illustration. I love doing digital illustrations with Illustrator or Figma, but what I enjoy the most is turning them into tattoos for people. I do them in hand-poke and it’s been more than two years since I started this project. 
                             </p>
                             <img class="profile-pic" src="../images/maria-image.jpg" alt="">
                         </div>

@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: $light-grey
+    // background-color: $light-grey
   }
   
   * {
@@ -11,9 +11,9 @@ body {
   .body {
     // max-width: $pagemaxwidth-mobile;
     margin: 0 auto;
-    background-color: $light-grey;
+    // background-color: $light-grey;
     height: 100vh;
-    border: 2px solid rgb(197, 197, 197);
+    // border: 2px solid rgb(197, 197, 197);
     overflow: hidden; //Elimina esto si queires ver la capa entera.
   }
   
@@ -29,23 +29,23 @@ body {
   // HOME-ABOUT
   .scroll-section-home {
     // background: $pink;
-    background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
+    // background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
     width: 33.3333%;
   }
 
   // SKILLS
   .scroll-section-skills {
-    background-color: $light-grey;
+    // background-color: $light-grey;
     width: 33.3333%;
     // background: $pink;
-    background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
+    // background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
   }
 
   // CONTACT
   .scroll-section-contact {
  
     // background: $pink;
-    background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
+    // background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
     width: 33.3333%;
   }
   
