@@ -143,23 +143,20 @@ a:link, a:visited, a:active {
 
 @media all and (min-width:800px) {
   body {
-
       header {
         padding-left: $space-max;
         padding-right: $space-max;
       }
+
       // *****home
       .scroll-section-home {
-
         @include sections ($space-max, flex-start);
         padding-top: 0px;
       }
-      // *****skills
 
+      // *****skills
       .scroll-section-skills {
           @include sections ($space-max, flex-start, column );
-          // display: flex;
-          // flex-direction: column;
           flex-wrap: wrap;
           height: 100%;
     
@@ -189,16 +186,15 @@ a:link, a:visited, a:active {
             margin-top: 0;
             width: 50%;
           }
-            .profile-pic {
-              // position: relative;
-              height: min-content;
-              width: 15%;
-              border-radius: $space;
-            }  
+          .profile-pic {
+            height: min-content;
+            width: 15%;
+            border-radius: $space;
+          }  
               
         }
 
-      // *****contact
+    // *****contact
       .scroll-section-contact {
         padding: $padding;
       }
@@ -215,6 +211,6 @@ a:link, a:visited, a:active {
           width: 15%;
           display: inline;
       }
-      }
+    }
   }
 }

@@ -298,6 +298,9 @@ html .p-skills, body .p-skills {
   body h3 {
     font-size: 56px;
   }
+  body .home-title {
+    margin-top: 50px !important;
+  }
   body .p-into {
     font-size: 24px;
   }
@@ -324,7 +327,7 @@ html .p-skills, body .p-skills {
   }
 }
 :root {
-  --background-color: #F5F5F5;
+  --background-color: #F0F0F0;
   --text-color: $black;
 }
 
@@ -336,16 +339,25 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+body .eb3 {
+  visibility: hidden;
+}
 
 [data-theme=dark] {
   --background-color: #1F1C1D;
   --text-color: #D4D7CE;
 }
+[data-theme=dark] .body .rrss .rrss_icon {
+  fill: #E8E8E8;
+  opacity: 0.7;
+}
 [data-theme=dark] .body #theme-switcher .theme-img-button {
   fill: #D4D7CE;
+  opacity: 0.7;
 }
 [data-theme=dark] .body #theme-switcher .theme-text-button {
   color: #D4D7CE;
+  opacity: 0.7;
 }
 [data-theme=dark] .body h3, [data-theme=dark] .body h4 {
   text-shadow: 0px 0px 26px rgba(212, 215, 206, 0.5);
@@ -362,7 +374,10 @@ body {
   background-color: #FF85C7;
 }
 [data-theme=dark] .eb2 {
-  display: none;
+  visibility: hidden;
+}
+[data-theme=dark] .eb3 {
+  visibility: visible;
 }
 [data-theme=dark] .talk-button {
   border: 2px solid #FF85C7;
@@ -416,7 +431,7 @@ body {
   padding: 0px;
   width: 25px;
   height: 30px;
-  fill: #E8E8E8;
+  fill: #FF85C7;
   opacity: 0.8;
 }
 
