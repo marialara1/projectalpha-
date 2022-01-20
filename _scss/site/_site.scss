@@ -171,7 +171,7 @@ a:link, a:visited, a:active {
         }
       }
       .nav_container {
-        margin-top: 0;
+        margin-top: $space;
         display: flex;
         order: 0;
         justify-content: center
