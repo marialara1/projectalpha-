@@ -9,7 +9,7 @@ body {
     height: 100vh;
     z-index: -400;
   }
-
+  // theme icon
   #theme-switcher {
     display: flex;
     background: none;
@@ -20,6 +20,7 @@ body {
     height:90vh;
     margin-left: $space;
     border:none;
+    cursor: pointer;
 
     .theme-img-button {
       margin-top: 5px;
@@ -40,6 +41,8 @@ body {
     justify-content: space-between;
     margin-top: $space;
     padding: $unit;
+    // width: 100%;
+    flex-wrap: wrap;
 
     h1 {
       padding: 0px;
@@ -53,6 +56,15 @@ body {
   }
 
 // ----- NAV-SCROLL
+.nav_container {
+  margin-top: $space;
+  gap: $unit;
+  order: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center
+  // flex: 0 0 100%;
+}
 .nav {
   margin-left: 30px;
 }
@@ -144,8 +156,25 @@ a:link, a:visited, a:active {
 @media all and (min-width:800px) {
   body {
       header {
+        display: flex;
         padding-left: $space-max;
         padding-right: $space-max;
+        flex-wrap: nowrap;
+        width: 100%;
+        h1, h2 {
+          display: flex;
+          flex-wrap: nowrap;
+          width: 100%;
+        }
+        h2 {
+          justify-content: flex-end;
+        }
+      }
+      .nav_container {
+        margin-top: 0;
+        display: flex;
+        order: 0;
+        justify-content: center
       }
 
       // *****home

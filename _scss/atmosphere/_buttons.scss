@@ -1,19 +1,20 @@
-// GENERAL
+// botones
 
+// Let's talk!
 .talk-button {
     width: 100px;
     padding: $unit;
     background-color: none;
     border-radius: 30px;
-    border: 2px solid $black;
+    border: 2px solid $pink;
     transition: transform 750ms;
     margin-top: 50%;
-    color: $black;
+    color: $pink;
     cursor: pointer;
     z-index: 10;
 }
 
-
+// send
 #send-button {
     width: 120px;
     padding: $unit;
@@ -27,6 +28,3 @@
     cursor: pointer;
     z-index: 10;
 }
-
-   
-    

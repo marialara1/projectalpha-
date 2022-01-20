@@ -20,77 +20,60 @@ body {
 [data-theme="dark"] {
   --background-color: #1F1C1D;
   --text-color: #D4D7CE;
-  .body {
-    .rrss {
-
-        .rrss_icon {
-          fill: $light-grey;
-          opacity: 0.7;
-        }
+        // RRSS
+        .rrss {
+            .rrss_icon {
+                fill: $light-grey;
+                opacity: 0.7;
+            }
       }
-    #theme-switcher {
-    // theme switcher button
-        .theme-img-button {
+         // theme switcher button
+        #theme-switcher {
+        .theme-img-button, .theme-text-button {
           fill: #D4D7CE;
-          opacity: 0.7;
-        }
-        .theme-text-button {
           color: #D4D7CE;
           opacity: 0.7;
+          
         }
-    //   text and other elements
       }
+      //   text and other elements
       h3, h4{
           text-shadow: 0px 0px 26px rgba(212, 215, 206, 0.50);
       }
-      .tags {        
 
-            & li {
-                border: 1.5px solid $light-grey;
-            }
+        // bg image
+        .eb2 {
+            visibility: hidden;
         }
+
+        .eb3 {
+            visibility: visible;
+        }
+        //   buttons and tags
+        .talk-button {
+            border: 2px solid $pink;
+            color: $pink;
+            }
         .talk-button:hover {
             color: #1F1C1D;
             background-color: $pink;
         }
-        
+        #send-button {
+            border: 1.5px solid $light-grey;
+            color: $light-grey;
+        }
         #send-button:hover {
             color: #1F1C1D;
-            background-color: $pink;
-        }
-
-    }
-// bg image
-  .eb2 {
-      visibility: hidden;
-  }
-
-  .eb3 {
-      visibility: visible;
-  }
-//   buttons and tags
-  .talk-button {
-    border: 2px solid $pink;
-    color: $pink;
-    h3 {
-        text-shadow: 0px 0px 26px rgba(212, 215, 206, 0.77);
-    }
-}
-#send-button {
-    border: 1.5px solid $light-grey;
-    color: $light-grey;
-}
-    .tags {        
-
-            & li {
-                border: 1.5px solid #D4D7CE;
+            background-color: #D4D7CE;
+            border: none;
+        } 
+            .tags {        
+                    & li {
+                        border: 1.5px solid #D4D7CE;
+                    }
+                }    
+            // form 
+            .message, #subject, #email, #tel {
+                @include contact ($largo:150px, $border-form: (1.5px solid $light-grey))
             }
-        }    
-
-// form 
-
-.message, #subject, #email, #tel {
-    @include contact ($largo:150px, $border-form: (1.5px solid $light-grey))
-}
-
 }
