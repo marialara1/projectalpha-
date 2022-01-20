@@ -37,9 +37,13 @@ html, body {
 // DESKTOP
     @media all and (min-width:800px) {
         body {
+            
             // home
             h3 {
                 font-size: 56px;
+            }
+            .home-title {
+                margin-top: 50px!important;
             }
             .p-into {
                 font-size: 24px;
@@ -63,7 +67,6 @@ html, body {
             .p-skills {
                 font-size: 20px;
             }
-        
 
             // contact
             .contact-title {
