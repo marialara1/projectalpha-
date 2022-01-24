@@ -1,21 +1,19 @@
 body {
     padding: 0;
-    margin: 0;
     // background-color: $light-grey
+     // max-width: $pagemaxwidth-mobile;
+     margin: 0 auto;
+     // background-color: $light-grey;
+     height: 100vh;
+     // border: 2px solid rgb(197, 197, 197);
+     overflow: hidden; //Elimina esto si queires ver la capa entera.
   }
   
   * {
     box-sizing: border-box;
   }
   
-  .body {
-    // max-width: $pagemaxwidth-mobile;
-    margin: 0 auto;
-    // background-color: $light-grey;
-    height: 100vh;
-    // border: 2px solid rgb(197, 197, 197);
-    overflow: hidden; //Elimina esto si queires ver la capa entera.
-  }
+ 
   
   .sections {
     width: 300%; // 3 secciones, cada sección copua el 100%

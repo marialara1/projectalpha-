@@ -1,43 +1,41 @@
 html, body {
         font-family: Sporting Grotesque;
         src: url(../../tipo/SportingGrotesque-Bold.otf);
+}
 
-
-        h1, h4 {
-            font-size: 18px;
-        }
-
-        h2 {
-            font-size: 18px;
-        }
-
-        h3 {
-            font-size: 22px;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        p {
-            font-family: 'Open Sans', sans-serif;
-            padding: 0px;
-        }
-
-        .talk-button {
-            text-align: center;
-            font-size: 14px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-        }
-
-        .p-skills {
-            font-size: 12px;
-
-        }
+    h1, h4 {
+        font-size: 18px;
     }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 22px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        padding: 0px;
+    }
+
+    .talk-button {
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    .p-skills {
+        font-size: 12px;
+    }
+
 // DESKTOP
     @media all and (min-width:800px) {
         body {
-            
             // home
             h3 {
                 font-size: 56px;
