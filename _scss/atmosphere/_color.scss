@@ -81,7 +81,15 @@ body {
                     }
                 }    
             // form 
+            .forminput {
+                color: $light-grey;
+            }
+                .forminput:focus{
+                    color: $pink;
+                }
+            
             .message, #subject, #email, #tel {
                 @include contact ($largo:150px, $border-form: (1.5px solid $light-grey))
             }
+            
 }

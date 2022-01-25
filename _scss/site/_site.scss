@@ -80,10 +80,11 @@ body {
     height: 100vh;
   }
 // ------------HOME-ABOUT
+
   .scroll-section-home {
 
     @include sections ($space, flex-start);
-    padding-top: 8%;
+    padding-top: 5%;
 
     h3{
       margin: 0;
@@ -157,7 +158,7 @@ a:link, a:visited, a:active {
 
 @media all and (min-width:800px) {
   .secscr {
-    margin-top: 75px;
+    margin-top: 40px;
   }
       header {
         display: flex;
@@ -245,5 +246,19 @@ a:link, a:visited, a:active {
           width: 15%;
           display: inline;
       }
+
+    //   .imgmail {
+    //     display: flex;
+    //     flex-direction: column;
+    //     width: 100%;
+    //     align-items: center;
+    //     margin: auto;
+    //     vertical-align: middle;
+    // }
+    // .emailimage{
+    //   margin-top: $space;
+    //   fill: $pink;
+    //   opacity: 0.5;
+    // }
     }
 }

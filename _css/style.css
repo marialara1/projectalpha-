@@ -100,7 +100,7 @@ header h2 {
       -ms-flex-align: start;
           align-items: flex-start;
   height: 100vh;
-  padding-top: 8%;
+  padding-top: 5%;
 }
 .scroll-section-home h3 {
   margin: 0;
@@ -190,7 +190,7 @@ a:link, a:visited, a:active {
 
 @media all and (min-width: 800px) {
   .secscr {
-    margin-top: 75px;
+    margin-top: 40px;
   }
 
   header {
@@ -481,6 +481,12 @@ body {
 }
 [data-theme=dark] .tags li {
   border: 1.5px solid #D4D7CE;
+}
+[data-theme=dark] .forminput {
+  color: #E8E8E8;
+}
+[data-theme=dark] .forminput:focus {
+  color: #FF85C7;
 }
 [data-theme=dark] .message, [data-theme=dark] #subject, [data-theme=dark] #email, [data-theme=dark] #tel {
   height: 150px;
