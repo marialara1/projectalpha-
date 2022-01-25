@@ -14,7 +14,7 @@
 // ------- RRSS
 
 .rrss {
-    position: fixed;
+    position: absolute;
     bottom: $space;
     z-index: 600;
     left: 50%;
@@ -27,6 +27,6 @@
       width: 25px;
       height: 30px;
       fill: $pink;
-      opacity: 0.7;
+      // opacity: 0.7;
     }
   }

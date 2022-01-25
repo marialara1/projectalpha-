@@ -2,13 +2,17 @@ body {
   height: 100%;
   margin: 0;
   cursor: url(../../images/cursor.svg);
+  overflow: hidden;
 }  
-
+// - background
   .ellipse-bg {
-    position: fixed;
-    height: 100vh;
-    z-index: -400;
+    position: absolute;
+    z-index: -10;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    bottom: 0px;
   }
+  
   // theme icon
   #theme-switcher {
     display: flex;
@@ -92,7 +96,10 @@ body {
 
     }
   }
-
+.scroll-area{
+  overflow: hidden;
+  height: 100vh;
+}
   // -----------SKILLS
     .scroll-section-skills {
       @include sections ($space, flex-start, column );
@@ -149,7 +156,9 @@ a:link, a:visited, a:active {
 
 
 @media all and (min-width:800px) {
-
+  .secscr {
+    margin-top: 75px;
+  }
       header {
         display: flex;
         padding-left: $space-max;
@@ -214,7 +223,7 @@ a:link, a:visited, a:active {
           }
           .profile-pic {
             height: min-content;
-            width: 15%;
+            width: 12%;
             border-radius: $space;
           }    
         }

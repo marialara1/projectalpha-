@@ -1,50 +1,37 @@
 body {
-    padding: 0;
-    // background-color: $light-grey
-     // max-width: $pagemaxwidth-mobile;
+     padding: 0;
      margin: 0 auto;
-     // background-color: $light-grey;
      height: 100vh;
-     // border: 2px solid rgb(197, 197, 197);
-     overflow: hidden; //Elimina esto si queires ver la capa entera.
+     overflow: hidden;
   }
   
   * {
     box-sizing: border-box;
   }
   
- 
-  
   .sections {
-    width: 300%; // 3 secciones, cada sección copua el 100%
+    width: 300%;
     display: flex;
     transition: transform .5s ease-in;
+    
   }
-  // .scroll-section {
-  //   padding: 12px;
-  //   height: 100vh;
-  // }
+
   // HOME-ABOUT
   .scroll-section-home {
-    // background: $pink;
-    // background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
     width: 33.3333%;
+    overflow: hidden;
   }
 
   // SKILLS
   .scroll-section-skills {
-    // background-color: $light-grey;
     width: 33.3333%;
-    // background: $pink;
-    // background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
+    overflow: hidden;
   }
 
   // CONTACT
   .scroll-section-contact {
- 
-    // background: $pink;
-    // background: linear-gradient(0deg, $pink 10%, $pink 15%, $light-grey 35%);
     width: 33.3333%;
+    overflow: hidden;
   }
   
   // Checkboxes function
@@ -96,9 +83,6 @@ body {
    margin: 0;
  }
 
-//  .nav__label-first {
-//    margin-left: 30%;
-//  }
 
  span {
    margin-top: 5px;
@@ -106,4 +90,4 @@ body {
    padding: 0;
  }
 
-  // nav icons- todos lightgrey pero cuando están input seleccionados son rosas
+ 

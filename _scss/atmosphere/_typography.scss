@@ -78,3 +78,17 @@ html, body {
             }
         }
     }
+
+    @media (max-height:700px) {
+        .tags {
+            margin-bottom: 0px;  
+        
+        & li {
+            font-size: 8px;
+        }
+    }
+
+        .p-skills {
+            font-size: 10px;
+        }
+    }
