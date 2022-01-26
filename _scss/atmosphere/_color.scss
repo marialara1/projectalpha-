@@ -1,5 +1,5 @@
 :root {
-    --background-color: #F0F0F0;
+    --background-color: #F5F5F5;
     --text-color: $black; 
 }
 
@@ -15,16 +15,19 @@ body {
 //     visibility: visible;
 //   }
 
-.eb3 {
-    visibility: hidden;
-}
+// .eb3 {
+//     visibility: hidden;
+// }
 
 
 // DARK-THEME
 [data-theme="dark"] {
   --background-color: #1F1C1D;
   --text-color: #D4D7CE;
-
+    // body {
+    //     background: rgb(255,126,210);
+    //     background: linear-gradient(0deg, rgba(255,126,210,1) 0%, rgba(29,26,27,1) 23%);
+    // }
   .nav-icon {
     fill: #1F1C1D;
 }
@@ -50,13 +53,13 @@ body {
       }
 
         // bg image
-        .eb2 {
-            visibility: hidden;
-        }
+        // .eb2 {
+        //     visibility: hidden;
+        // }
 
-        .eb3 {
-            visibility: visible;
-        }
+        // .eb3 {
+        //     visibility: visible;
+        // }
         //   buttons and tags
         .talk-button {
             border: 2px solid $pink;

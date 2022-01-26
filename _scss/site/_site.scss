@@ -3,15 +3,19 @@ body {
   margin: 0;
   cursor: url(../../images/cursor.svg);
   overflow: hidden;
+  background: rgb(255,133,199);
+background: linear-gradient(0deg, rgba(255,133,199,0.4430147058823529) 0%, rgba(29,26,27,0) 12%);
+  // background: rgb(255,133,199);
+  // background: linear-gradient(0deg, rgba(255,133,199,1) 0%, rgba(232,232,232,1) 24%);
 }  
 // - background
-  .ellipse-bg {
-    position: absolute;
-    z-index: -10;
-    transform: translate(-50%, 0%);
-    left: 50%;
-    bottom: 0px;
-  }
+  // .ellipse-bg {
+  //   position: absolute;
+  //   z-index: -10;
+  //   transform: translate(-50%, 0%);
+  //   left: 50%;
+  //   bottom: 0px;
+  // }
   
   // theme icon
   #theme-switcher {
@@ -19,9 +23,8 @@ body {
     background: none;
     position: absolute;
     z-index: 999;
-    transform: translate(0px, 100%);
+    bottom: $space;
     width:100px;
-    height:90vh;
     margin-left: $space;
     border:none;
     cursor: pointer;
@@ -116,6 +119,7 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
+        align-items: flex-end;
       }
 
        .skills-title {
@@ -235,6 +239,7 @@ a:link, a:visited, a:active {
       }
       
       .contact-container {
+        margin-left: 150px;
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -246,19 +251,5 @@ a:link, a:visited, a:active {
           width: 15%;
           display: inline;
       }
-
-    //   .imgmail {
-    //     display: flex;
-    //     flex-direction: column;
-    //     width: 100%;
-    //     align-items: center;
-    //     margin: auto;
-    //     vertical-align: middle;
-    // }
-    // .emailimage{
-    //   margin-top: $space;
-    //   fill: $pink;
-    //   opacity: 0.5;
-    // }
     }
 }

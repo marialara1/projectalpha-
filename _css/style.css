@@ -3,15 +3,9 @@ body {
   margin: 0;
   cursor: url(../../images/cursor.svg);
   overflow: hidden;
-}
-
-.ellipse-bg {
-  position: absolute;
-  z-index: -10;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  left: 50%;
-  bottom: 0px;
+  background: #ff85c7;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 133, 199, 0.4430147059)), color-stop(12%, rgba(29, 26, 27, 0)));
+  background: linear-gradient(0deg, rgba(255, 133, 199, 0.4430147059) 0%, rgba(29, 26, 27, 0) 12%);
 }
 
 #theme-switcher {
@@ -21,10 +15,8 @@ body {
   background: none;
   position: absolute;
   z-index: 999;
-  -webkit-transform: translate(0px, 100%);
-          transform: translate(0px, 100%);
+  bottom: 20px;
   width: 100px;
-  height: 90vh;
   margin-left: 20px;
   border: none;
   cursor: pointer;
@@ -150,6 +142,9 @@ header h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .scroll-section-skills .skills-title {
   margin-bottom: 10px;
@@ -319,6 +314,7 @@ a:link, a:visited, a:active {
   }
 
   .contact-container {
+    margin-left: 150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -420,7 +416,7 @@ p {
   }
 }
 :root {
-  --background-color: #F0F0F0;
+  --background-color: #F5F5F5;
   --text-color: $black;
 }
 
@@ -431,10 +427,6 @@ body {
   color: var(--text-color);
   overflow: hidden;
   height: 100vh;
-}
-
-.eb3 {
-  visibility: hidden;
 }
 
 [data-theme=dark] {
@@ -455,12 +447,6 @@ body {
 }
 [data-theme=dark] h3, [data-theme=dark] h4 {
   text-shadow: 0px 0px 26px rgba(212, 215, 206, 0.5);
-}
-[data-theme=dark] .eb2 {
-  visibility: hidden;
-}
-[data-theme=dark] .eb3 {
-  visibility: visible;
 }
 [data-theme=dark] .talk-button {
   border: 2px solid #FF85C7;
